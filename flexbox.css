@@ -1,0 +1,19 @@
+.container{
+	background-color: gray;
+	padding: 10px;
+	margin: 10px;
+	display: flex;
+	height: 500px;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	
+}
+
+.container h1{
+	background-color: cyan;
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	/*flex: 1*/
+}

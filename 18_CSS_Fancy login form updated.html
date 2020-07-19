@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Login Form</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+
+	<style>
+		body{
+			background-image: url(.//img/nature3.jpg);
+			background-size: cover;
+			color: white;
+		}
+		#frm{
+			/*border:2px solid blue;*/
+			width: 220px;
+			text-align: center;
+			margin: 150px auto;
+			padding: 15px 25px;
+			background: rgba(255,255,255,0.2);
+			border-radius: 15px;
+		}
+
+		input{
+			padding: 2px;
+			margin: 2px;
+			background: transparent;
+			outline: none;
+			border:none;
+			border-bottom: 2px solid pink;
+			font-size: 14px;
+		}
+			input[type=submit]{
+				border:2px solid lime;
+				padding: 10px 25px;
+				margin: 5px;
+				border-radius: 20px;
+				position: relative;
+				bottom: -10px;
+			}
+	
+	.fa-user-circle{
+		font-size: 80px;
+		margin-top: -50%;
+		color: lightblue;
+	}
+
+::placeholder{
+	background-color: yellow;
+}
+		
+	</style>
+</head>
+<body>
+			<div id="frm" class="animated jello">
+				<i class="fa fa-user-circle"></i>
+				<form class="login">
+					<h3>Login Here</h3>
+					<input type="text" class="unme" placeholder="username"> <br>
+					<input type="password" class="pass" placeholder="password">
+					<input type="submit" value="Login ">
+				</form>
+			</div>
+</body>
+</html>

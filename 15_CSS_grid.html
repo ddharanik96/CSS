@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS GRID</title>
+	<style>
+		.wrapper{
+			display: grid;
+			/*grid-template-columns: 1fr 2fr 1fr 1fr;*/
+			grid-template-columns: repeat(4,2fr);
+			grid-gap: 0.2cm;
+			/*grid-auto-rows: 200px;*/
+			grid-auto-rows: minmax(100px,auto);
+		}
+
+			.nested{
+			display: grid;
+			grid-template-columns: repeat(5,1fr);
+			grid-gap: 40px;
+			grid-auto-rows: 100px;
+
+		}
+		.wrapper > div{
+			background-color: #aaa;
+			padding: 5px;
+		}
+
+		.wrapper > div:nth-child(odd){
+			background-color: #ccc;
+		}
+		
+	
+		.nested > div{
+			border: #333 2px solid;
+			padding: 20px;
+		}
+	</style>
+</head>
+<body>
+	   <div class="wrapper">
+
+	   	<div>
+	   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,lorem</p>
+	   	</div>
+	   	<div>
+	   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+	   	</div>
+	   	<div>
+	   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	   		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	   		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	   		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	   		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	   		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	   	</div>
+	   	<div class="nested">
+	   				<p>lorem</p>
+	   				<p>lorem</p>
+	   				<p>lorem</p>
+	   				<p>lorem</p>
+	   	</div>
+	   	<div>
+	   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+	   	</div>
+	   	<div>
+	   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+	   	</div>
+	   	<div>
+	   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+	   	</div>
+	   	<div>
+	   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+	   	</div>
+	   	<div>
+	   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+	   	</div>
+	   	<div>
+	   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+	   	</div>
+	   	<div>
+	   		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+	   	</div>
+
+	   </div>
+</body>
+</html>

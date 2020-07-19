@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Backgrounds</title>
+
+	<style>
+
+	
+		#bg-color{
+			background-color: teal;
+		}
+
+		#bg-img{
+			border: 2px solid lightgreen;
+			text-align: center;
+			padding: 15px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px cyan;
+			width: 400px;
+			margin: 2px;
+			background-image: url(../img/image2.jpg);
+			background-size: cover;
+			color: white;
+		}
+
+		#bg-att{
+			height: 300px;
+			box-shadow: 0 0 10px lightblue;
+			background: pink  url(.//img/ws2.jpg) No-repeat top center Fixed;
+		}
+
+		#bg-rpt{
+			width: 450px;
+			height: 300px;
+			box-shadow: 0 0 10px black;
+			border-radius: 10px;
+			background-color: lightsalmon;
+			background-image: url(../img/nature.jpg);
+			background-repeat: no-repeat;
+			background-position: top left;
+			background-attachment: scroll;
+}
+			/* 
+			we can write all above properties in single line to reduce number of lines 
+			background: lightsalmon url(.//img/nature.jpg) No-repeat Scroll top left;
+	*/
+
+		#bg-pstn{
+			width: 450px;
+			height: 300px;
+			box-shadow: 0 0 10px black;
+			border-radius: 10px;
+			background: lightsalmon url(.//img/nature.jpg) No-repeat Scroll bottom left;
+		}
+
+			#bg-sze{
+			width: 500px;
+			height: 300px;
+			box-shadow: 0 0 10px black;
+			background-image: url(.//img/image2.jpg);
+			background-size: cover;
+			border-radius: 10px;
+		}
+
+		#grdnt{
+			width: 500px;
+			height: 300px;
+			box-shadow: 0 0 10px black;
+			border-radius: 10px;
+			background: linear-gradient(45deg,lime,cyan,lime);
+		}
+	</style>
+</head>
+<body>
+
+
+<!-- 
+
+	 CSS Background Properties
+
+->   background Color
+		(RGB,HEX,HSL etc----)
+->  background -image
+		url(../img.jpeg);
+->	  background-repeat 
+		(No-repeat, repeat-x, repeat-y)
+->	  background-position 
+		(Top,Left,Right,Bottom,center)
+->   background-attachment
+		(Scroll,Fixed) 
+-> background-size:cover;
+
+-> background-linear Gradient (deg,col,col)
+
+	-->
+
+
+	<h2>Backgound Color</h2>
+	<div id="bg-color">
+		<h1>I am with Teal Color Background</h1>
+
+	</div>
+
+<h2>Background Image</h2>
+
+<div id="bg-img">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<h2>Background Attachment</h2>
+<div id="bg-att">
+</div>
+
+<h2>Background Repeat</h2>
+<div id="bg-rpt">
+</div>
+
+<h2>Background Position</h2>
+<div id="bg-pstn">
+</div>
+
+<h2>Background Size</h2>
+<div id="bg-sze">
+</div>
+
+<h2>Gradient</h2>
+<div id="grdnt">
+</div>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,96 @@
+ #internal{
+        color: cyan;
+        font-size:18px;
+       }
+
+       .para{
+        color: magenta;
+        background-color: pink;
+        padding: 5px;
+        margin: 5px;
+        color:maroon;
+       }
+
+       input[type=text]:hover{
+        background-color: pink;
+        border:1px solid maroon;
+        border-radius: 4px;
+        box-shadow: 5px 8px 10px forestgreen;
+       }
+
+       input[type=password]:hover{
+        background-color: yellow;
+       border:1px solid red;
+        border-radius: 4px;
+        color: black;
+        box-shadow: 5px 8px 10px lime;
+       }
+
+        input[type=submit]:hover{
+            background-color: forestgreen;
+            color: white;
+        }
+
+         input[type=reset]:hover{
+            background-color: lightblue;
+            color: blue;
+        }
+
+        input[type=text]:focus{
+          background-color: #A7B5C4;
+          font-size:14px ;
+          font-family: cursive;
+          outline: none;
+        }
+
+        input[type=password]:focus{
+          background-color: #BDDEFF;
+          font-size:14px;
+          font-family: cursive;
+          outline: none;
+        }
+
+
+
+            /* CSS Colors Styles 
+            
+                      .container{
+                      color:pink;
+                      text-align: center;
+                      border:2px solid cyan;
+                      padding: 20px;
+                      width: 800px;  
+                      margin: auto;
+                    }
+
+                    body .container{
+                      background-image: url(/img/ws.jpg);
+                      background-size: cover;
+                    }
+                    */
+input{
+  height: 20px;
+  border-radius: 3px;
+}
+
+ol li{
+  background-color: #94A1AE;
+}
+
+ol li:nth-child(1){
+  background-color: lightpink;
+}
+ol li:nth-child(2){
+  background-color: purple;
+}
+ol li:nth-child(3){
+  background-color: lightgreen;
+}
+ol li:nth-child(4){
+  background-color: lightcyan;
+}
+
+
+
+
+

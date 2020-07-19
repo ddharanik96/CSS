@@ -1,0 +1,52 @@
+body{
+	font-family: corbel;
+}
+h2{
+	text-align: center;
+	position: relative;
+	top: -15px;	
+}
+input{
+	display: block;
+	padding: 10px;
+	width: 240px;
+	outline: none;
+}
+input[type="submit"]{
+	background: linear-gradient(20deg,pink,lime);
+	padding: 8px;
+	width: 250px;
+	border: none;
+	box-shadow: 0 3px 3px black;
+}
+select{
+	width:260px;
+	height: 30px;
+	outline: none;
+}
+#sec{
+	position: relative;
+	top: -15px;
+}
+.form{
+	background: linear-gradient(155deg,lime,cyan);
+	width: 300px;
+	height: 450px;
+	margin: 50px auto;  /* We can use position concept*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 15px;
+}
+
+.fa-user-circle{
+	font-size: 60px;
+	display: block;  /* We can use Flex */
+	text-align: center;
+	border: 10px solid cyan;
+	height: 60px;
+	width: 60px;
+	margin: auto;
+	border-radius: 50%;
+
+}

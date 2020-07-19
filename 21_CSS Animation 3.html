@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Animation</title>
+	<style>
+
+		body{
+			background-image: url(.//img/nature3.jpg);
+			background-size: cover;
+			text-align: center;
+			margin: 150px auto;
+		}
+		.name{
+			height: 100px;
+			width: 100px;
+			box-shadow: 0 0 10px gray;
+			background: linear-gradient(205deg,forestgreen,cyan);
+			border-left: 10px solid green;
+			border-right: 10px solid blue;
+			border-top: 20px solid pink;
+			border-bottom: 20px solid purple;
+			border-radius: 50%;
+			animation: rotate-clock 0.75s infinite linear; 
+		}
+
+		@keyframes rotate-clock{
+			0%{
+				transform: rotate(0deg);
+			}
+
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+
+		.nme1{
+			height: 100px;
+			width: 100px;
+			box-shadow: 0 0 10px gray;
+			background: linear-gradient(205deg,forestgreen,cyan);
+			border-left: 10px inset magenta;
+			border-right: 10px outset orange;
+			border-top: 20px inset forestgreen;
+			border-bottom: 20px solid red;
+			border-radius: 50%;
+			animation: rotate-reverse 0.75s infinite linear; 
+		}
+
+		div{
+			display: inline-block;
+			margin: 15px;
+		}
+	@keyframes rotate-reverse{
+			0%{
+				transform: rotate(360deg);
+			}
+
+			100%{
+				transform: rotate(0deg);
+			}
+		}
+		
+	</style>
+</head>
+<body>
+		<div class="name"></div>
+		<div class="nme1"></div>
+		<div class="name"></div>
+		<div class="nme1"></div>
+		<div class="name"></div>
+		<div class="nme1"></div>
+</body>
+</html>

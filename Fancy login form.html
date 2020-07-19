@@ -1,0 +1,80 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+     <title>Fancy Login Form</title>
+
+     <style>
+
+        body{
+            font-family: corbel;
+            background-image: url(/img/imgb.jpg);
+            background-size: cover;
+        }
+         .form-div{
+            border: 2px solid blue;
+            margin:2px;
+            padding: 5px;
+            width: 250px;
+            border-radius: 10px;
+            color: blue;
+            text-align: center;
+            background-image: url(/img/gif.gif);
+            background-size: cover;
+            box-shadow: 0 0 15px lime;
+         }
+
+         #ht{
+            color: white;
+            text-align: center;
+         }
+
+      input[type="text"],input[type="password"]{
+        height: 30px;
+        padding: 2px;
+        margin: 5px;
+        text-align: center;
+        border: 2px solid blue;
+        border-radius: 12px;
+        outline: none;
+        }
+
+    input:hover{
+    outline: none;
+    background-color: lightblue;
+}
+        input[type='submit'],input[type='reset']{
+            color: white;
+            background-color: blue;
+            padding: 5px 8px;
+            margin:2px 2px;
+            border-radius: 20px;
+            border: none;
+            outline: none;
+        }
+
+             input[type='submit']:hover,input[type='reset']:hover{
+                opacity: 10.8;
+                cursor: pointer;
+                box-shadow: 5px 2px lightblue;
+            }
+     </style>
+ </head>
+ <body>
+ 
+
+<div class="form-div">
+ <form>
+        <h2 id="ht">Login Here</h2>
+     
+     <input type="text" required="true" placeholder="Username">
+     <input type="Password" minlength="6" maxlength="12" placeholder="Password">
+     <input type="submit" name="submit">
+     <input type="reset" name="reset">
+ </form>
+ </div>
+
+ 
+     
+
+ </body>
+ </html>

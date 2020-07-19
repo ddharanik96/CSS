@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Borders</title>
+	<style>
+			#bodall{
+			background-color:hsl(100,60%,45%);
+			padding: 10px;
+			width: 500px;
+			text-align: center;
+			border: 5px double RGB(201,56,199);			
+			}
+
+			#mby{
+				background-color: hsl(22,85%,55%);
+				width: 500px;
+				padding: 10px;
+				text-align: center;
+				border-left: 4px inset green;
+				border-right: 4px outset purple;
+				border-top: 4px double cyan;
+				border-bottom: 4px groove lime
+			}
+
+			.rnd{
+					background-color: rgb(20,150,165);
+					width: 500px;
+					padding: 10px;
+					text-align: center;
+					border-radius: 50px;
+			}
+
+			.tr{
+					background-color: hsla(199,98%,68%,0.8);
+					width: 500px;
+					padding: 10px;
+					text-align: center;
+					border-radius: 25% 0 20% 0;
+			}
+
+			.per{
+					background-color: rgba(201,56,196,0.9);
+				    width: 500px;
+					padding: 10px;
+					text-align: center;
+					border-radius: 25px 0 20px 0;
+			}
+
+				#circle{
+					height: 300px;
+					width: 300px;
+					box-shadow: 0 0 5px purple;
+					border-radius: 50%;
+					background: linear-gradient(48deg,cyan,lightblue,pink);
+				}
+
+				#cleb{
+					height: 200px;
+					width: 200px;
+					box-shadow: 0 0 5px purple;
+					border-radius: 50%;
+					background: linear-gradient(175deg,purple,black,cyan);
+					border: 10px groove magenta;
+				}
+
+				#border{
+					height: 200px;
+					width: 200px;
+					border-radius: 20px;
+					box-shadow: 0 0 5px pink;
+					background-image: url(../img/image1.jpg);
+					background-size: cover;
+					border-top: 10px inset blue;
+					border-bottom: 10px outset lightpink;
+					border-left: 10px inset cyan;
+					border-right:10px outset lightgreen;
+				}
+
+				#ring{
+					height: 200px;
+					width: 200px;
+					box-shadow: 0 0 2px green;
+					border-radius: 50%;
+					border-top: 10px inset blue;
+					border-bottom: 10px outset lightpink;
+					border-left: 30px inset cyan;
+					border-right:30px outset lightgreen;
+					background: linear-gradient(125deg,magenta,cyan,salmon,white);
+				}
+
+				#ytb{
+					height: 315px;
+					width: 560px;
+					box-shadow: 0 0 20px green;
+					border-left: 50px outset lightgreen;
+					border-right: 50px outset cyan ;
+					border-top: 20px inset magenta;
+					border-bottom: 10px inset rgba(205,195,107,0.9);
+					border-radius: 12px;
+
+				}
+				
+ /*
+			border-width: 10px;
+			border-style:inset; 
+			border-color: pink;
+
+			1)	Border Width :  Thickness of the border Pixels,Centimeter,Millimeter
+			2)	Border Style :  Styles of the border hidden,dotted,dashed,solid,double,groove,ridge,inset,outset,dotted solid double dashed, dotted solid, initial 
+			3)	Border Color: Any color of the border 
+						Text,HEX,RGB	
+
+
+			Shortcut for full border: border: width style color; 
+										border:5px solid green;
+			Shortcut for Sided border-top/bottom/left/right:width style color;
+										border-right: 5px groove red;
+										border-left:5px double green;
+										border-top: 10px inset pink;
+										border-bottom: 10px outset black;
+
+			Full border: border-radius:20px;
+
+			Two sided border radius: border-radius: 25px 0 0 50px; 
+
+			circle: Height and Width should be same and border radius is 50%;
+
+
+
+										*/
+
+			
+			
+		
+	</style>
+</head>
+<body>
+
+<h2>Border All Sides</h2>
+
+<div id="bodall">
+			<h2>Border All Sides</h2>
+</div>
+
+<br><br>
+
+<div id="mby">
+	<h1>Multiple Borders in single box</h1>
+</div>
+
+<br><br>
+<div class="rnd">
+	<h1>Rounded Border</h1>
+</div>
+
+<br><br>
+<div class="tr">
+	<h1>Two side Radius With Percentage</h1>
+</div>
+
+<br><br>
+
+<div class="per">
+	<h1>Two side Radius With Pixels</h1>
+</div>
+
+<br>
+
+<h2>Circle</h2>
+<div id="circle">
+</div>
+
+<br>
+
+<h2>Circle With Border</h2>
+<div id="cleb">
+</div>
+
+<br>
+
+<h2>Frame with border</h2>
+<div id="border">
+</div>
+
+<br>
+
+<h2>Ring</h2>
+<div id="ring">	
+</div>
+
+<br>
+
+<h2>Youtube Video</h2>
+<div id="ytb">
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b8Zc4WGOcE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</div>
+</body>
+</html>
+

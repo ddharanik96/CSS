@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Responsive Design</title>
+	<link rel="stylesheet" type="text/css" href="responsivedesign.css">
+</head>
+<body>
+
+<div>
+	<header id="showcase" class="grid">
+		<div class="bg-img"></div>
+			<h1>Welcome to Acme Solutuons</h1>		
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		
+		<a href="#section-b" class="btn">Read More</a>
+		
+	</header>
+
+	<!-- main area Sec a-->
+	<main id="main">
+		<section id="section-a" class="grid">
+			<div class="content-wrap">
+				<h2>Web And Application Devlopment</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</section>
+	</main>
+
+			<!-- Section B-->
+			<section id="section-b" class="grid">
+				<ul>
+					<li>
+						<div class="card">
+							<img src=".//img/prog.jpg">
+							<h3 id="about">Web Devlopment</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</li>
+
+					<li>
+						<div class="card">
+							<img src=".//img/phone.jpg">
+							<h3 id="about">Mobile Applications</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</li>
+					
+					<li>
+						<div class="card">
+							<img src=".//img/mark.jpg">
+							<h3 id="about">Marketing</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+
+			<!-- Section c-->
+			<section id="section-c" class="grid">
+				<div class="contentwra">
+					<h2>We handle all of your needs</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat consequatur laboriosam quos. Odio eius, reiciendis vero velit illum nulla inventore, accusantium libero illo impedit, ipsa quam dicta provident est culpa.</p>
+				</div>
+			</section>
+
+			<!--Section D-->
+			<section id="section-grab" class="grid">
+				<div id="box">
+					<h2>Contact Us</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore omnis autem asperiores totam soluta maxime unde architecto porro, numquam fugit.</p>
+					<p>contact@ddkreddy.com</p>
+				</div>
+				<div class="box">
+					<h2>About our company</h2>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, maiores quae. Ullam dolorum suscipit illum unde officia odio, recusandae libero magni magnam nulla incidunt, molestiae aliquid aperiam similique, nesciunt voluptas!</p>
+				</div>
+			</section>
+			<footer id="foot-foot" class="grid">
+				<div>Acme web solutions</div>
+				<div>Project by Dharani<a href="#">Traversy</a></div>
+				
+			</footer>
+</body>
+</html>
+
+
+<!-- 
+		View port -> View port  is an attribute which can be added to html metatags which is automatically adjust dimension of internal elemnst as per screen sizes it maintain ratioo based on ratio it automatically adjust the things  internally in your website
+
+		Media Queries -> It is again a CSS concept where you have to specifiacally mention this pixels to this pixels screen size i want to apply some styles and this to another pixels size i have to use some other styles then u have to go with Media Queries specifically to each device  screen sizes 
+
+		Use Fluid dimensions instead of fixed -> Generally we may give some fixed dimensiosn like pixels ,width insead of giving we can give pixel we can REM,EM Automatically adjust you may have to give REM and EM , you have to give Max-width and min-width instead of giving fixed with or height , After that you have to give Media queries . 
+
+		Mobile first approach -> first imagine you  have to devlop website main concentrate on mobiles screens  once mobile scrren done then expand to next level called tablet, then next to laptop and next to extra large screens 
+
+		Screen sizes for devices -> 
+
+		Mobile -> 0px - 500px
+		Tablet -> 501px - 768 px
+		Laptop -> 769px - 1200px
+		Wide -> 
+	-->

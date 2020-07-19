@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS TABLES</title>
+    <style>
+
+        body{
+            background-color: #DAEFEF;
+             font-family: corbel;
+
+        }
+        table,th,td{
+
+            padding: 5px;
+            height: 20px;
+            text-align: center;
+            font-size: 20px;
+            border-radius: 30px;
+          cursor: pointer;
+        }
+
+        th{
+            background-color: #9F96AE;
+        }
+
+        tr:nth-child(even){
+            background-color: #97DAD1;
+        }
+
+        tr:nth-child(odd){
+            background-color: forestgreen;
+        }
+
+        td:hover{
+                 background-color: lime;
+            }
+
+            th:hover{
+                background-color: purple;
+                color: white;
+                box-shadow: 4px 2px 3px blue;
+            }
+    </style>
+</head>
+<body>
+
+    <!-- CUSTOM TABLE -->
+
+    <table width="100%">
+        <th>S.No</th>
+        <th>Employee Name</th>
+        <th>Designation</th>
+        <th>Company</th>
+
+        <tr>
+            <td>1</td>
+            <td>Dharani Kumar Reddy</td>
+            <td>Test Engineer</td>
+            <td>Microsoft</td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Karthik Reddy</td>
+            <td>Project Manager</td>
+            <td>HP</td>
+        </tr>
+
+         <tr>
+            <td>3</td>
+            <td>Anonymous</td>
+            <td>Scrum Master</td>
+            <td>Google</td>
+        </tr>
+
+         <tr>
+            <td>4</td>
+            <td>John Alen</td>
+            <td>Software Engineer</td>
+            <td>IBM</td>
+        </tr>
+
+         <tr>
+            <td>5</td>
+            <td>Peter John</td>
+            <td>Business Analyst</td>
+            <td>HP</td>
+        </tr>
+
+         <tr>
+            <td>6</td>
+            <td>Reddy & Bros</td>
+            <td>QA Engineer</td>
+            <td>Infosys</td>
+        </tr>
+
+         <tr>
+            <td>7</td>
+            <td>Michel Joy</td>
+            <td>QC Controller</td>
+            <td>Capgemini</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
+
+
+
+<!-- 
+       before applying all styles we added normal borders to the table 
+        border:2px solid magenta;
+            border-collapse: collapse;
+            
+            we need to remove after all styles to get look and feel 
+
+
+                by using pseudo classes we can hover even or odd rows colors 
+        --> 
+
+
+        <!-- Codes by HTML.am -->
+
+

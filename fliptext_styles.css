@@ -1,0 +1,40 @@
+#flip-text{
+	height: 350px;
+	width: 400px;
+	margin: 80px auto;
+	position: relative;
+	border-radius: 20px;
+	border: 10px groove cyan;
+	box-shadow: 0 0 5px 5px lightblue;
+	overflow: hidden
+}
+
+#flip-text img{
+	height: inherit;
+	width: inherit;
+}
+
+#flip-text:hover img{
+	transform: scale(1.5,1.5);
+	transition: all 2s;
+
+}
+
+#data{
+position: absolute;
+top: 0;
+background-color: rgba( 0,0,0,0.5);
+color: white;
+height: 100%;
+width: 50%;
+padding: 15px;
+box-sizing: border-box;
+transform: rotateY(90deg);
+transform-origin: left;
+
+}
+
+#flip-text:hover #data{
+transform: perspective(400px) rotateY(0deg);	
+transition: all 0.8s;
+}

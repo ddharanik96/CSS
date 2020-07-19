@@ -1,0 +1,36 @@
+#fruit{
+	height: 350px;
+	width: 380px;
+	border-radius: 20px;
+	margin: 50px auto;
+	position: relative;
+	overflow: hidden;
+}
+#fruit img{
+	width: inherit;
+	height: inherit;
+	border-radius: 0 10px 10px 0;
+	transform: translateX(50%);
+}
+
+#fruit:hover img{
+	transform: translateX(0%);
+	transition: all 2s;
+	
+}
+#data{
+position: absolute;
+top: 0;
+color: black;
+height: 100%;
+width: 50%;
+background: linear-gradient(39deg,lime,pink,cyan);
+padding: 15px;
+box-sizing: border-box;
+border-radius: 12px 0 0 12px;
+}
+
+#fruit:hover #data{
+transform: translateX(-100%);
+transition: all 2s;
+}

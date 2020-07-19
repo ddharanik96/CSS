@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Buttons</title>
+	<style>
+.btn{
+	background-color: teal;
+	text-decoration: none;
+	color:rgb(255, 255, 255);
+	border:none;
+	font-family: Consolas, "Lucida Console", Monaco, monospace;
+	font-size:18px;
+	padding: 14px 65px; /* 14 top and bott 65 left and right */
+	outline: none;
+	height: auto;
+	border-radius: 5px;
+	box-shadow: 0 0 5px  lime;
+}
+
+.btn:hover{
+	opacity: 0.8;
+	cursor: pointer;
+	}
+
+.btn-outline{
+background-color: #ffffff;
+color: teal;
+text-decoration: none;
+border:1px solid teal;
+padding: 14px 65px;
+box-shadow: 0 0 5px grey;
+font-family:Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+font-size: 18px;
+outline: none;
+cursor: pointer;
+}
+
+.btn-outline:hover{
+	opacity: 0.8;
+	cursor: pointer;
+
+}
+
+.btn-bt{
+	color: #ffffff;
+	border:none;
+	padding: 14px 55px;
+	box-shadow: 0 0 5px grey;
+	outline: none;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	font-size: 18px;
+	border-radius: 50px;
+	box-shadow: 0 0 5px cyan;
+	cursor: pointer;
+}
+
+.primary{ background-color:blue;}
+.secondary{ background-color: grey }
+.success{ background-color: green }
+.warning{ background-color: orange }
+.danger{ background-color: red }
+
+.btn-bt-outline{
+	background-color: #ffffff;
+	border:1px solid teal;
+	font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+	font-size: 18px;
+	padding: 14px 55px;
+	box-shadow: 0 0 5px forestgreen;
+	border-radius: 50px;
+	cursor: pointer;
+	outline: none;
+}
+
+.bt-primary{ border:1px blue ; color: blue; }
+.bt-secondary{ border:1px solid grey;color: grey; }
+.bt-success{ border:1px solid green; color: green; }
+.bt-warning{ border:1px solid orange; color: orange }
+.bt-danger{ border:1px solid red; color: red; } 
+
+
+	</style>
+
+</head>
+<body>
+
+<!-- Simple Button--> 
+<div>
+	<h3>Simple Buttons</h3>
+	<a class="btn" href="#">Link</a>
+	<button class="btn">Button</button>
+	<input class="btn" type="submit" value="Input">
+</div>
+
+<!-- Simple Outline Button--> 
+<div>
+	<h3>Simple Outline Button</h3>
+	<a class="btn-outline" href="#">Link</a>
+<button class="btn-outline">Button</button>
+<input type="submit" value="Input" class="btn-outline">
+</div>
+
+<!-- Bootstrap buttons --> 
+
+<div>
+	<h3>Bootstrap Buttons</h3>
+	<button class="btn-bt primary">Primary</button><!-- bs-btn is base class primary is specific class -->
+	<button class="btn-bt secondary">Secondary</button>
+	<button class="btn-bt success">Success</button>
+	<button class="btn-bt warning">Warning</button>
+	<button class="btn-bt danger">Danger</button>
+</div>
+
+<!-- Bootstrap outline Buttons --> 
+
+<div>
+	<h3>Bootstrap outline Buttons</h3>
+	<button class="btn-bt-outline bt-primary">Primary</button>
+	<button class="btn-bt-outline bt-secondary">Secondary</button>
+	<button class="btn-bt-outline bt-success">Success</button>
+	<button class="btn-bt-outline bt-warning">Warning</button>
+	<button class="btn-bt-outline bt-danger">Danger</button>
+</div>
+
+</body>
+</html>
